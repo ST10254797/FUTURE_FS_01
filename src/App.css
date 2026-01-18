@@ -110,3 +110,93 @@ body {
 .contact-card p { color: var(--text-dim); font-size: 0.8rem; }
 
 .section h2 { text-align: center; font-size: 2.5rem; margin-top: 4rem; }
+/* --- RESUME SECTION STYLES --- */
+
+/* The main container for the Resume card */
+.resume-cta-container {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--card-bg); /* Matches your project cards */
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 4rem auto; /* Centers it and gives vertical space */
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease-in-out;
+}
+
+.resume-cta-container:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 40px rgba(56, 189, 248, 0.1);
+}
+
+.resume-icon-box {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.resume-cta-container p {
+  color: var(--text-dim);
+  margin-bottom: 2.5rem;
+}
+
+/* Container for the View & Download buttons */
+.resume-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures buttons stack on mobile */
+}
+
+/* Standard button base for the Resume section */
+.btn-view, .btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.8rem 1.8rem;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+}
+
+/* "View Resume" - The Outline Style */
+.btn-view {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+}
+
+.btn-view:hover {
+  background: rgba(56, 189, 248, 0.1);
+  transform: translateY(-3px);
+}
+
+/* "Download PDF" - The Solid Style */
+.btn-download {
+  background: var(--accent);
+  color: var(--bg); /* Dark text on bright button */
+  border: 2px solid var(--accent);
+}
+
+.btn-download:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(56, 189, 248, 0.3);
+  background: #7dd3fc; /* Slightly lighter on hover */
+}
+
+/* Mobile Tweak: Stack buttons on small screens */
+@media (max-width: 480px) {
+  .resume-actions {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  
+  .btn-view, .btn-download {
+    width: 100%;
+    justify-content: center;
+  }
+}

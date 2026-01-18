@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import ResumeSection from './components/ResumeSection'; // 1. Import it here
 import ProjectCard from './components/ProjectCard';
 import Contact from './components/Contact';
 import { PROJECTS } from './data';
@@ -12,6 +13,9 @@ function App() {
       <Navbar />
       <Hero />
       
+      {/* 2. Place it here so recruiters see it early */}
+      <ResumeSection /> 
+
       <section id="projects" className="section">
         <h2>My Projects</h2>
         <div className="project-grid">
