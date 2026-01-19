@@ -18,18 +18,17 @@ export const PROJECTS = [
 ];
 
 export const SKILLS = [
-  "React.js", 
-  "JavaScript", 
-  "HTML5", 
-  "CSS3", 
-  "Node.js", 
-  "Git", 
-  "GitHub", 
-  "Full Stack Development"
+  { name: "React.js", iconName: "Layout", level: "Frontend" },
+  { name: "JavaScript", iconName: "Code2", level: "Language" },
+  { name: "Node.js", iconName: "Cpu", level: "Backend" },
+  { name: "HTML5/CSS3", iconName: "Globe", level: "Frontend" },
+  { name: "MongoDB", iconName: "Database", level: "Database" },
+  { name: "Git/GitHub", iconName: "GitBranch", level: "Version Control" },
+  { name: "Tailwind", iconName: "Layers", level: "Styling" },
+  { name: "Vite", iconName: "Terminal", level: "Build Tool" },
 ];
 
 export const CONTACT_LINKS = {
-  // Format: https://wa.me/ followed by number without + or spaces
   whatsapp: "https://wa.me/27722036428", 
   email: "mailto:cristianoronaldonaidoo@gmail.com",
   linkedin: "https://www.linkedin.com/in/cristiano-ronaldo-naidoo",
