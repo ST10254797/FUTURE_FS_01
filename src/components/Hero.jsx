@@ -1,16 +1,15 @@
 import React from 'react';
 import { SKILLS } from '../data';
-import { ArrowRight, Terminal, User } from 'lucide-react';
+import { ArrowRight, Terminal, User, Code2, Cpu, Globe } from 'lucide-react';
 
 const Hero = () => {
-  // Replace with your actual image path in the public folder, e.g., "/profile.jpg"
   const myPhoto = "profile.jpg"; 
 
   return (
     <header id="about" className="hero-section">
       <div className="hero-container">
         
-        {/* LEFT SIDE: TEXT CONTENT */}
+        {/* LEFT SIDE: PERSONAL BRAND */}
         <div className="hero-content">
           <div className="badge-intro">
             <Terminal size={14} /> <span>Available for Hire</span>
@@ -21,22 +20,38 @@ const Hero = () => {
             <span className="highlight">Cristiano Ronaldo Naidoo</span>
           </h1>
           
-          <p className="subtitle">
-            Building the future of the web as a <strong>Full Stack Intern</strong>. 
-            Specializing in high-performance React applications.
-          </p>
-          
-          <div className="skill-tags">
-            {SKILLS.map((skill, index) => (
-              <span key={index} className="skill-badge">
-                {skill.name}
-              </span>
-            ))}
+          <div className="about-me-bio">
+            <p className="subtitle">
+              I am a <strong>Full Stack Intern</strong> with a passion for building 
+              digital products that are as fast as they are beautiful.
+            </p>
+            <p className="bio-extra">
+              Based in Durban, I bridge the gap between complex backend logic 
+              and fluid frontend experiences. Currently focused on mastering 
+              the <strong>MERN stack</strong> and modern UI architecture.
+            </p>
+          </div>
+
+          {/* DEDICATED SKILLS AREA */}
+          <div className="skills-showcase">
+            <div className="skills-header">
+              <Code2 size={18} className="accent-icon" />
+              <h3>Technical Toolkit</h3>
+            </div>
+            
+            <div className="skill-tags-v2">
+              {SKILLS.map((skill, index) => (
+                <div key={index} className="skill-card-mini">
+                  <span className="skill-dot"></span>
+                  <span className="skill-name">{skill.name}</span>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="hero-btns">
             <a href="#projects" className="btn-primary">
-              View My Work <ArrowRight size={18} />
+              View Projects <ArrowRight size={18} />
             </a>
             <a href="#contact" className="btn-secondary">
               Let's Talk
@@ -44,11 +59,9 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* RIGHT SIDE: PHOTO STACKED ABOVE CARD */}
+        {/* RIGHT SIDE: VISUAL STACK */}
         <div className="hero-visual">
           <div className="visual-stack">
-            
-            {/* PHOTO CONTAINER (NOW ABOVE THE CARD) */}
             <div className="profile-container">
               {myPhoto ? (
                 <img 
@@ -63,26 +76,24 @@ const Hero = () => {
               )}
             </div>
 
-            {/* THE TERMINAL CARD */}
             <div className="visual-card">
               <div className="card-header">
                 <span className="dot red"></span>
                 <span className="dot yellow"></span>
                 <span className="dot green"></span>
-                <span className="file-name">intern.js</span>
+                <span className="file-name">identity.ts</span>
               </div>
               
               <div className="card-body">
                 <code>
-                  <span className="code-keyword">const</span> intern = &#123; <br />
-                  &nbsp;&nbsp;name: <span className="code-string">'Cristiano'</span>, <br />
-                  &nbsp;&nbsp;role: <span className="code-string">'FullStack'</span>, <br />
-                  &nbsp;&nbsp;status: <span className="code-string">'Learning'</span> <br />
+                  <span className="code-keyword">type</span> <span className="code-class">Dev</span> = &#123; <br />
+                  &nbsp;&nbsp;focus: <span className="code-string">'Scalability'</span>, <br />
+                  &nbsp;&nbsp;passions: [<span className="code-string">'UX'</span>, <span className="code-string">'Performance'</span>], <br />
+                  &nbsp;&nbsp;coffee: <span className="code-keyword">true</span> <br />
                   &#125;;
                 </code>
               </div>
             </div>
-
           </div>
         </div>
 
