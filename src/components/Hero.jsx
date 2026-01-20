@@ -4,7 +4,7 @@ import { ArrowRight, Terminal, User } from 'lucide-react';
 
 const Hero = () => {
   // Replace with your actual image path in the public folder, e.g., "/profile.jpg"
-  const myPhoto = "https://via.placeholder.com/150"; 
+  const myPhoto = "profile.jpg"; 
 
   return (
     <header id="about" className="hero-section">
