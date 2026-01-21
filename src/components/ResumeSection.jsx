@@ -2,7 +2,7 @@ import React from 'react';
 import { FileText, Download, Eye, ExternalLink } from 'lucide-react';
 
 const ResumeSection = () => {
-  const resumeLink = "/Updated_Cristiano_R_Naidoo_CV.pdf"; 
+  const resumeLink = "/Cristiano_R_Naidoo_CV"; 
 
   return (
     <section id="resume" className="section">
