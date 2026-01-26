@@ -18,15 +18,45 @@ export const PROJECTS = [
 ];
 
 export const SKILLS = [
-  { name: "React.js", iconName: "Layout", level: "Frontend" },
+  // Programming Languages
+  { name: "C#", iconName: "Code2", level: "Language" },
+  { name: "Java", iconName: "Code2", level: "Language" },
+  { name: "Delphi", iconName: "Code2", level: "Language" },
+  { name: "Kotlin", iconName: "Code2", level: "Language" },
   { name: "JavaScript", iconName: "Code2", level: "Language" },
-  { name: "Node.js", iconName: "Cpu", level: "Backend" },
-  { name: "HTML5/CSS3", iconName: "Globe", level: "Frontend" },
-  { name: "MongoDB", iconName: "Database", level: "Database" },
-  { name: "Git/GitHub", iconName: "GitBranch", level: "Version Control" },
-  { name: "Tailwind", iconName: "Layers", level: "Styling" },
-  { name: "Vite", iconName: "Terminal", level: "Build Tool" },
+
+  // Web Development
+  { name: "HTML", iconName: "Globe", level: "Frontend" },
+  { name: "CSS", iconName: "Layers", level: "Styling" },
+  { name: "ASP.NET", iconName: "Layout", level: "Web Framework" },
+
+  // Application Development
+  { name: "Desktop Applications", iconName: "Cpu", level: "Application Dev" },
+  { name: "Web Applications", iconName: "Layout", level: "Application Dev" },
+
+  // Databases
+  { name: "Oracle", iconName: "Database", level: "Database" },
+  { name: "MySQL", iconName: "Database", level: "Database" },
+
+  // Cloud & Tools
+  { name: "Microsoft Azure", iconName: "Terminal", level: "Cloud Platform" },
+
+  // Software Engineering
+  { name: "Software Development", iconName: "Cpu", level: "Engineering" },
+
+  // Version Control / Tooling
+  { name: "Git / GitHub", iconName: "GitBranch", level: "Version Control" },
+
+  // IT & Support
+  { name: "Systems Administration", iconName: "Terminal", level: "Infrastructure" },
+  { name: "Network Engineering", iconName: "Cpu", level: "Networking" },
+  { name: "IT Support", iconName: "Terminal", level: "Support" },
+
+  // Troubleshooting
+  { name: "Software Troubleshooting", iconName: "Code2", level: "Diagnostics" },
+  { name: "Hardware Troubleshooting", iconName: "Cpu", level: "Diagnostics" },
 ];
+
 
 export const CONTACT_LINKS = {
   whatsapp: "https://wa.me/27722036428", 
