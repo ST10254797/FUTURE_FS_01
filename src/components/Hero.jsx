@@ -3,7 +3,7 @@ import { SKILLS } from '../data';
 import { ArrowRight, Terminal, User, Code2 } from 'lucide-react';
 
 const Hero = () => {
-  const myPhoto = "profile.jpg"; 
+  const myPhoto = "profile_pic.jpg"; 
 
   return (
     <header id="about" className="hero-section">
